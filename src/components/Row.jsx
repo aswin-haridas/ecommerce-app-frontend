@@ -1,10 +1,22 @@
 import React from 'react'
-import shirt from '../assets/shirt.jpeg'
+import styled from 'styled-components'
+import Tile from './Tile'
 
+const RowContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 10px;
+`;
 
 function Row() {
   return (
-    <img src = {shirt} alt = "shirt" />
+    <RowContainer>
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+    </RowContainer>
   )
 }
 

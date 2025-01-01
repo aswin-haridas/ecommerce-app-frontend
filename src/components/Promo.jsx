@@ -6,6 +6,8 @@ import banner2 from "../assets/promotionbanner2.png";
 const BannerWrapper = styled.div`
   display: flex;
   overflow: hidden;
+  border-bottom:1px solid black; 
+  border-top:1px solid black; 
 `;
 
 const Banner = styled.img`
