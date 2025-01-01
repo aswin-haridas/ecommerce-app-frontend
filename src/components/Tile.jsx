@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import shirt from '../assets/shirt.jpeg'
 
 const TileContainer = styled.div`
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   text-align: center;
 `;
 
@@ -28,6 +28,7 @@ const Price = styled.div`
 const Rating = styled.div`
   color: #f39c12;
 `;
+
 
 function Tile() {
   return (

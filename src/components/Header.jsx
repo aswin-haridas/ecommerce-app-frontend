@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SearchIcon from '@mui/icons-material/Search';
-import { Favorite, FavoriteBorder, ShoppingBagOutlined } from "@mui/icons-material";
+import { FavoriteBorder, ShoppingBagOutlined } from "@mui/icons-material";
 
 const Logo = styled.div`
   font-size: 24px;
