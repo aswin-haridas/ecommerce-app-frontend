@@ -6,11 +6,11 @@ import Row from "./components/Row";
 function App() {
   return (
     <>
-      <Header />
-      <Promo />
-      <Row />
-      <LoginSignUp/>
-    </>
+    <Header />
+    <Promo />
+    <Row />
+    <LoginSignUp />
+  </>
   );
 }
 

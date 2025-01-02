@@ -53,6 +53,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Logo>Thunikkada</Logo>
+      <Categories />
       <SearchContainer>
         <SearchIconWrapper>
           <SearchIcon />
