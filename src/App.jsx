@@ -1,15 +1,11 @@
-import Header from "./components/Header";
-import LoginSignUp from "./components/LoginSignUp";
-import Promo from "./components/Promo";
-import Row from "./components/Row";
+import Explore from "./screens/Explore";
+import HomePage from "./screens/Home";
+
 
 function App() {
   return (
     <>
-    <Header />
-    <Promo />
-    <Row />
-    <LoginSignUp />
+    <Explore/>
   </>
   );
 }
