@@ -1,29 +1,38 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from 'react';
+import styled from 'styled-components';
+import Tile from '../components/Tile';
+import { products } from '../utils/products';
 
-import items from '../utils/items'
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+`;
 
-function Explore() {
-  return (<>
-    <Header />
-    <div>
-      {Object.keys(items.women).map((category) => (
-        <div key={category}>
-          <h2>{category}</h2>
-          {Object.keys(items.women[category]).map((subCategory) => (
-            <div key={subCategory}>
-              <h3>{subCategory}</h3>
-              <div>
-                {items.women[category][subCategory].map((item) => (
-                  <img key={item.id} src={item.src} alt="fashion item" style={{ width: '200px', margin: '10px' }} />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div></>
-  )
-}
+const ImageGrid = () => {
+  return (
+    <>
+      <h1>Explore Products</h1>
+      <GridContainer>
+        {products.length > 0 ? (
+          products.map(({ id, category, file_path, file_name, price, rating }) => (
+            <Tile
+              key={id}
+              imageSrc={file_path}
+              altText={`Image of ${file_name}`}
+              price={price}
+              rating={rating}
+              category={category}
+              fileName={file_name}
+            />
+          ))
+        ) : (
+          <p>No images available</p>
+        )}
+      </GridContainer>
+    </>
+  );
+};
 
-export default Explore
+export default ImageGrid;

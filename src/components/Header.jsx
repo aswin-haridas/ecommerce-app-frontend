@@ -1,7 +1,8 @@
+import React from "react";
 import styled from "styled-components";
 import { FavoriteBorder, PersonOutline, ShoppingBagOutlined } from "@mui/icons-material";
-import Logo from "./HeaderAtoms/Logo";
-import SearchBox from "./HeaderAtoms/SearchBox";
+import Logo from "./Logo";
+import SearchBox from "./SearchBox";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -25,11 +26,23 @@ const IconButton = styled.button`
   align-items: center;
 `;
 
-const Header = () => {
+const ExploreButton = styled.div`
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+`;
+
+const Header = ({ onMouseEnter }) => {
   return (
     <HeaderContainer>
-      <Logo/>
-      <SearchBox/>
+      <Logo />
+      <ExploreButton onMouseEnter={onMouseEnter} onClick={onMouseEnter}>
+        EXPLORE
+      </ExploreButton>
+      <SearchBox />
       <IconContainer>
         <IconButton>
           <FavoriteBorder />
