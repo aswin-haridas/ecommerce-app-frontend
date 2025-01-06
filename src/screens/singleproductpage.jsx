@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleProductPage = ({ product }) => {
+const SingleProductPage = ({ product, addToCart }) => {
     if (!product) {
         return <div>Loading...</div>;
     }
@@ -11,7 +11,7 @@ const SingleProductPage = ({ product }) => {
             <img src={product.image} alt={product.name} />
             <p>{product.description}</p>
             <p>Price: ${product.price}</p>
-            <button>Add to Cart</button>
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
         </div>
     );
 };

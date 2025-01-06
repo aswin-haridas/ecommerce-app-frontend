@@ -8,70 +8,70 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 200px;
-  width: 600px;
+  margin-top: 100px;
+  width: 400px;
   background: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 `;
 
 const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 9px;
+  gap: 5px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 
 const Text = styled.div`
   color: #3c009d;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
 `;
 
 const Underline = styled.div`
-  width: 61px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background: #3c009d;
-  border-radius: 9px;
+  border-radius: 6px;
 `;
 
 const Inputs = styled.div`
-  margin-top: 55px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 `;
 
 const Input = styled.div`
   display: flex;
   align-items: center;
   margin: auto;
-  width: 480px;
-  height: 80px;
+  width: 320px;
+  height: 50px;
   background: #eaeaea;
   border-radius: 6px;
 `;
 
 const InputIcon = styled.img`
-  margin: 0px 30px;
+  margin: 0px 20px;
 `;
 
 const InputField = styled.input`
-  height: 50px;
-  width: 400px;
+  height: 30px;
+  width: 250px;
   background: transparent;
   border: none;
   outline: none;
   color: #797979;
-  font-size: 19px;
+  font-size: 14px;
 `;
 
 const ForgotPassword = styled.div`
-  padding-left: 62px;
-  margin-top: 27px;
+  padding-left: 40px;
+  margin-top: 15px;
   color: #797979;
-  font-size: 18px;
+  font-size: 14px;
 `;
 
 const ForgotPasswordSpan = styled.span`
@@ -81,20 +81,20 @@ const ForgotPasswordSpan = styled.span`
 
 const SubmitContainer = styled.div`
   display: flex;
-  gap: 30px;
-  margin: 60px auto;
+  gap: 20px;
+  margin: 40px auto;
 `;
 
 const SubmitButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 59px;
+  width: 150px;
+  height: 40px;
   color: #fff;
   background: ${props => (props.gray ? '#eaeaea' : '#4c00b4')};
   border-radius: 50px;
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   color: ${props => (props.gray ? '#676767' : '#fff')};
