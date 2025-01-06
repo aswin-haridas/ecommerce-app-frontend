@@ -1,10 +1,8 @@
-import React, { act } from 'react';
+import React, { useState} from 'react';
 import './LoginSignUp.css';
-import user_icon from '../assets/user.svg';
-import email_icon from '../assets/email.svg';
-import Password_icon from '../assets/password.svg';
-import { Password } from '@mui/icons-material';
-
+import user_icon from '../assets/user_icon.svg';
+import email_icon from '../assets/email_icon.svg';
+import Password_icon from '../assets/Password_icon.svg';
 const LoginSignUp = () => {
 
 const [action, setAction] = useState('Login');
@@ -17,15 +15,15 @@ const [action, setAction] = useState('Login');
             </div>
             <div className='inputs'>
                 {action==="Login"?<div></div>:<div className='input'>
-                    <img src={user_icon} alt='' />
+                    <img src={user_icon} alt='User Icon' />
                     <input type="text" placeholder='Name'/>
                 </div>}
                 <div className='input'>
-                    <img src={email_icon} alt='' />
+                    <img src={email_icon} alt='Email Icon' />
                     <input type="email" placeholder='Email Id'/>
                 </div>
                 <div className='input'>
-                    <img src={Password_icon} alt='' />
+                    <img src={Password_icon} alt='Password Icon' />
                     <input type="password" placeholder='Password'/>
                 </div>
             </div>
