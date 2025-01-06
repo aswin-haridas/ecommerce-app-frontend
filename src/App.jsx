@@ -5,7 +5,7 @@ import HomePage from "./screens/Home";
 function App() {
   return (
     <>
-    <Explore/>
+    <HomePage />
   </>
   );
 }

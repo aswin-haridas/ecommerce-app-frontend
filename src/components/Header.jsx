@@ -16,15 +16,30 @@ const IconContainer = styled.div`
   margin: 10px;
 `;
 
+const IconButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+`;
+
 const Header = () => {
   return (
     <HeaderContainer>
       <Logo/>
       <SearchBox/>
       <IconContainer>
-        <FavoriteBorder style={{ margin: '0 10px' }} />
-        <ShoppingBagOutlined style={{ margin: '0 10px' }} />
-        <PersonOutline style={{ margin: '0 10px' }} />
+        <IconButton>
+          <FavoriteBorder />
+        </IconButton>
+        <IconButton>
+          <ShoppingBagOutlined />
+        </IconButton>
+        <IconButton>
+          <PersonOutline />
+        </IconButton>
       </IconContainer>
     </HeaderContainer>
   );
