@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FavoriteBorder, PersonOutline, ShoppingBagOutlined } from "@mui/icons-material";
 import Logo from "./Logo";
 import SearchBox from "./SearchBox";
+import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -36,6 +37,12 @@ const ExploreButton = styled.div`
 `;
 
 const Header = ({ onMouseEnter }) => {
+
+  const navigate=useNavigate();
+  const goToLogin=()=>{
+    navigate('/auth');
+  };
+
   return (
     <HeaderContainer>
       <Logo />
@@ -50,7 +57,7 @@ const Header = ({ onMouseEnter }) => {
         <IconButton>
           <ShoppingBagOutlined />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={goToLogin}>
           <PersonOutline />
         </IconButton>
       </IconContainer>
