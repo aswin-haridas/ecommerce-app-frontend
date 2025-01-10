@@ -23,6 +23,7 @@ function HomePage() {
       <Promo />
       <Featured />
       <Footer />
+      {/* ith kannan pattunnundo */}
     </div>
   );
 }
