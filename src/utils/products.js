@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     category: "cargos",
-    file_name: "cargos_1.jpg",
+    product_name: "cargos_1.jpg",
     file_path: "men/bottom/cargos/cargos_1.jpg",
     price: 963,
     rating: 3.96,
@@ -10,7 +10,7 @@ export const products = [
   {
     id: 2,
     category: "cargos",
-    file_name: "cargos_10.jpg",
+    product_name: "cargos_10.jpg",
     file_path: "men/bottom/cargos/cargos_10.jpg",
     price: 560,
     rating: 4.06,
@@ -18,7 +18,7 @@ export const products = [
   {
     id: 3,
     category: "cargos",
-    file_name: "cargos_11.jpg",
+    product_name: "cargos_11.jpg",
     file_path: "men/bottom/cargos/cargos_11.jpg",
     price: 1381,
     rating: 4.06,
@@ -26,7 +26,7 @@ export const products = [
   {
     id: 4,
     category: "cargos",
-    file_name: "cargos_12.jpg",
+    product_name: "cargos_12.jpg",
     file_path: "men/bottom/cargos/cargos_12.jpg",
     price: 1197,
     rating: 3.48,
@@ -34,7 +34,7 @@ export const products = [
   {
     id: 5,
     category: "cargos",
-    file_name: "cargos_2.jpg",
+    product_name: "cargos_2.jpg",
     file_path: "men/bottom/cargos/cargos_2.jpg",
     price: 1314,
     rating: 4.65,
@@ -42,7 +42,7 @@ export const products = [
   {
     id: 6,
     category: "cargos",
-    file_name: "cargos_3.jpg",
+    product_name: "cargos_3.jpg",
     file_path: "men/bottom/cargos/cargos_3.jpg",
     price: 1858,
     rating: 3.89,
@@ -50,7 +50,7 @@ export const products = [
   {
     id: 7,
     category: "cargos",
-    file_name: "cargos_4.jpg",
+    product_name: "cargos_4.jpg",
     file_path: "men/bottom/cargos/cargos_4.jpg",
     price: 455,
     rating: 3.08,
@@ -58,7 +58,7 @@ export const products = [
   {
     id: 8,
     category: "cargos",
-    file_name: "cargos_5.jpg",
+    product_name: "cargos_5.jpg",
     file_path: "men/bottom/cargos/cargos_5.jpg",
     price: 1573,
     rating: 3.53,
@@ -66,7 +66,7 @@ export const products = [
   {
     id: 9,
     category: "cargos",
-    file_name: "cargos_6.jpg",
+    product_name: "cargos_6.jpg",
     file_path: "men/bottom/cargos/cargos_6.jpg",
     price: 1520,
     rating: 3.93,
@@ -74,7 +74,7 @@ export const products = [
   {
     id: 10,
     category: "cargos",
-    file_name: "cargos_7.jpg",
+    product_name: "cargos_7.jpg",
     file_path: "men/bottom/cargos/cargos_7.jpg",
     price: 1661,
     rating: 3.36,
@@ -82,7 +82,7 @@ export const products = [
   {
     id: 11,
     category: "cargos",
-    file_name: "cargos_8.jpg",
+    product_name: "cargos_8.jpg",
     file_path: "men/bottom/cargos/cargos_8.jpg",
     price: 526,
     rating: 4.38,
@@ -90,7 +90,7 @@ export const products = [
   {
     id: 12,
     category: "cargos",
-    file_name: "cargos_9.jpg",
+    product_name: "cargos_9.jpg",
     file_path: "men/bottom/cargos/cargos_9.jpg",
     price: 1434,
     rating: 4.35,
@@ -98,7 +98,7 @@ export const products = [
   {
     id: 13,
     category: "jeans",
-    file_name: "jeans_1.jpg",
+    product_name: "jeans_1.jpg",
     file_path: "men/bottom/jeans/jeans_1.jpg",
     price: 1708,
     rating: 4.91,
@@ -106,7 +106,7 @@ export const products = [
   {
     id: 14,
     category: "jeans",
-    file_name: "jeans_10.jpg",
+    product_name: "jeans_10.jpg",
     file_path: "men/bottom/jeans/jeans_10.jpg",
     price: 1714,
     rating: 4.46,
@@ -114,7 +114,7 @@ export const products = [
   {
     id: 15,
     category: "jeans",
-    file_name: "jeans_11.jpg",
+    product_name: "jeans_11.jpg",
     file_path: "men/bottom/jeans/jeans_11.jpg",
     price: 758,
     rating: 4.5,
@@ -122,7 +122,7 @@ export const products = [
   {
     id: 16,
     category: "jeans",
-    file_name: "jeans_12.jpg",
+    product_name: "jeans_12.jpg",
     file_path: "men/bottom/jeans/jeans_12.jpg",
     price: 1426,
     rating: 3.85,
@@ -130,7 +130,7 @@ export const products = [
   {
     id: 17,
     category: "jeans",
-    file_name: "jeans_2.jpg",
+    product_name: "jeans_2.jpg",
     file_path: "men/bottom/jeans/jeans_2.jpg",
     price: 1117,
     rating: 3.49,
@@ -138,7 +138,7 @@ export const products = [
   {
     id: 18,
     category: "jeans",
-    file_name: "jeans_3.jpg",
+    product_name: "jeans_3.jpg",
     file_path: "men/bottom/jeans/jeans_3.jpg",
     price: 1114,
     rating: 3.8,
@@ -146,7 +146,7 @@ export const products = [
   {
     id: 19,
     category: "jeans",
-    file_name: "jeans_4.jpg",
+    product_name: "jeans_4.jpg",
     file_path: "men/bottom/jeans/jeans_4.jpg",
     price: 491,
     rating: 3.72,
@@ -154,7 +154,7 @@ export const products = [
   {
     id: 20,
     category: "jeans",
-    file_name: "jeans_5.jpg",
+    product_name: "jeans_5.jpg",
     file_path: "men/bottom/jeans/jeans_5.jpg",
     price: 1413,
     rating: 4.2,
@@ -162,7 +162,7 @@ export const products = [
   {
     id: 21,
     category: "jeans",
-    file_name: "jeans_6.jpg",
+    product_name: "jeans_6.jpg",
     file_path: "men/bottom/jeans/jeans_6.jpg",
     price: 1833,
     rating: 4.5,
@@ -170,7 +170,7 @@ export const products = [
   {
     id: 22,
     category: "jeans",
-    file_name: "jeans_7.jpg",
+    product_name: "jeans_7.jpg",
     file_path: "men/bottom/jeans/jeans_7.jpg",
     price: 508,
     rating: 3.9,
@@ -178,7 +178,7 @@ export const products = [
   {
     id: 23,
     category: "jeans",
-    file_name: "jeans_8.jpg",
+    product_name: "jeans_8.jpg",
     file_path: "men/bottom/jeans/jeans_8.jpg",
     price: 1808,
     rating: 3.63,
@@ -186,7 +186,7 @@ export const products = [
   {
     id: 24,
     category: "jeans",
-    file_name: "jeans_9.jpg",
+    product_name: "jeans_9.jpg",
     file_path: "men/bottom/jeans/jeans_9.jpg",
     price: 328,
     rating: 4.82,
@@ -194,7 +194,7 @@ export const products = [
   {
     id: 25,
     category: "casual",
-    file_name: "casual_1.jpg",
+    product_name: "casual_1.jpg",
     file_path: "men/top/casual/casual_1.jpg",
     price: 1062,
     rating: 4.41,
@@ -202,7 +202,7 @@ export const products = [
   {
     id: 26,
     category: "casual",
-    file_name: "casual_10.jpg",
+    product_name: "casual_10.jpg",
     file_path: "men/top/casual/casual_10.jpg",
     price: 1131,
     rating: 3.97,
@@ -210,7 +210,7 @@ export const products = [
   {
     id: 27,
     category: "casual",
-    file_name: "casual_11.jpg",
+    product_name: "casual_11.jpg",
     file_path: "men/top/casual/casual_11.jpg",
     price: 1388,
     rating: 4.08,
@@ -218,7 +218,7 @@ export const products = [
   {
     id: 28,
     category: "casual",
-    file_name: "casual_12.jpg",
+    product_name: "casual_12.jpg",
     file_path: "men/top/casual/casual_12.jpg",
     price: 406,
     rating: 3.72,
@@ -226,7 +226,7 @@ export const products = [
   {
     id: 29,
     category: "casual",
-    file_name: "casual_2.jpg",
+    product_name: "casual_2.jpg",
     file_path: "men/top/casual/casual_2.jpg",
     price: 750,
     rating: 3.26,
@@ -234,7 +234,7 @@ export const products = [
   {
     id: 30,
     category: "casual",
-    file_name: "casual_3.jpg",
+    product_name: "casual_3.jpg",
     file_path: "men/top/casual/casual_3.jpg",
     price: 1524,
     rating: 3.69,
@@ -242,7 +242,7 @@ export const products = [
   {
     id: 31,
     category: "casual",
-    file_name: "casual_4.jpg",
+    product_name: "casual_4.jpg",
     file_path: "men/top/casual/casual_4.jpg",
     price: 1404,
     rating: 3.91,
@@ -250,7 +250,7 @@ export const products = [
   {
     id: 32,
     category: "casual",
-    file_name: "casual_5.jpg",
+    product_name: "casual_5.jpg",
     file_path: "men/top/casual/casual_5.jpg",
     price: 750,
     rating: 3.63,
@@ -258,7 +258,7 @@ export const products = [
   {
     id: 33,
     category: "casual",
-    file_name: "casual_6.jpg",
+    product_name: "casual_6.jpg",
     file_path: "men/top/casual/casual_6.jpg",
     price: 820,
     rating: 3.24,
@@ -266,7 +266,7 @@ export const products = [
   {
     id: 34,
     category: "casual",
-    file_name: "casual_7.jpg",
+    product_name: "casual_7.jpg",
     file_path: "men/top/casual/casual_7.jpg",
     price: 747,
     rating: 3.59,
@@ -274,7 +274,7 @@ export const products = [
   {
     id: 35,
     category: "casual",
-    file_name: "casual_8.jpg",
+    product_name: "casual_8.jpg",
     file_path: "men/top/casual/casual_8.jpg",
     price: 1963,
     rating: 3.14,
@@ -282,7 +282,7 @@ export const products = [
   {
     id: 36,
     category: "casual",
-    file_name: "casual_9.jpg",
+    product_name: "casual_9.jpg",
     file_path: "men/top/casual/casual_9.jpg",
     price: 913,
     rating: 3.65,
@@ -290,7 +290,7 @@ export const products = [
   {
     id: 37,
     category: "formal",
-    file_name: "formal_1.jpg",
+    product_name: "formal_1.jpg",
     file_path: "men/top/formal/formal_1.jpg",
     price: 494,
     rating: 4.41,
@@ -298,7 +298,7 @@ export const products = [
   {
     id: 38,
     category: "formal",
-    file_name: "formal_10.jpg",
+    product_name: "formal_10.jpg",
     file_path: "men/top/formal/formal_10.jpg",
     price: 742,
     rating: 3.59,
@@ -306,7 +306,7 @@ export const products = [
   {
     id: 39,
     category: "formal",
-    file_name: "formal_11.jpg",
+    product_name: "formal_11.jpg",
     file_path: "men/top/formal/formal_11.jpg",
     price: 715,
     rating: 3.34,
@@ -314,7 +314,7 @@ export const products = [
   {
     id: 40,
     category: "formal",
-    file_name: "formal_12.jpg",
+    product_name: "formal_12.jpg",
     file_path: "men/top/formal/formal_12.jpg",
     price: 602,
     rating: 4.33,
@@ -322,7 +322,7 @@ export const products = [
   {
     id: 41,
     category: "formal",
-    file_name: "formal_2.jpg",
+    product_name: "formal_2.jpg",
     file_path: "men/top/formal/formal_2.jpg",
     price: 1797,
     rating: 3.24,
@@ -330,7 +330,7 @@ export const products = [
   {
     id: 42,
     category: "formal",
-    file_name: "formal_3.jpg",
+    product_name: "formal_3.jpg",
     file_path: "men/top/formal/formal_3.jpg",
     price: 1915,
     rating: 4.53,
@@ -338,7 +338,7 @@ export const products = [
   {
     id: 43,
     category: "formal",
-    file_name: "formal_4.jpg",
+    product_name: "formal_4.jpg",
     file_path: "men/top/formal/formal_4.jpg",
     price: 694,
     rating: 4.33,
@@ -346,7 +346,7 @@ export const products = [
   {
     id: 44,
     category: "formal",
-    file_name: "formal_5.jpg",
+    product_name: "formal_5.jpg",
     file_path: "men/top/formal/formal_5.jpg",
     price: 864,
     rating: 3.64,
@@ -354,7 +354,7 @@ export const products = [
   {
     id: 45,
     category: "formal",
-    file_name: "formal_6.jpg",
+    product_name: "formal_6.jpg",
     file_path: "men/top/formal/formal_6.jpg",
     price: 1018,
     rating: 3.28,
@@ -362,7 +362,7 @@ export const products = [
   {
     id: 46,
     category: "formal",
-    file_name: "formal_7.jpg",
+    product_name: "formal_7.jpg",
     file_path: "men/top/formal/formal_7.jpg",
     price: 1959,
     rating: 4.02,
@@ -370,7 +370,7 @@ export const products = [
   {
     id: 47,
     category: "formal",
-    file_name: "formal_8.jpg",
+    product_name: "formal_8.jpg",
     file_path: "men/top/formal/formal_8.jpg",
     price: 541,
     rating: 3.1,
@@ -378,7 +378,7 @@ export const products = [
   {
     id: 48,
     category: "formal",
-    file_name: "formal_9.jpg",
+    product_name: "formal_9.jpg",
     file_path: "men/top/formal/formal_9.jpg",
     price: 1697,
     rating: 3.58,
@@ -386,7 +386,7 @@ export const products = [
   {
     id: 49,
     category: "traditional",
-    file_name: "traditional_1.jpg",
+    product_name: "traditional_1.jpg",
     file_path: "men/top/traditional/traditional_1.jpg",
     price: 1809,
     rating: 3.57,
@@ -394,7 +394,7 @@ export const products = [
   {
     id: 50,
     category: "traditional",
-    file_name: "traditional_10.jpg",
+    product_name: "traditional_10.jpg",
     file_path: "men/top/traditional/traditional_10.jpg",
     price: 1221,
     rating: 4.86,
@@ -402,7 +402,7 @@ export const products = [
   {
     id: 51,
     category: "traditional",
-    file_name: "traditional_11.jpg",
+    product_name: "traditional_11.jpg",
     file_path: "men/top/traditional/traditional_11.jpg",
     price: 1271,
     rating: 3.15,
@@ -410,7 +410,7 @@ export const products = [
   {
     id: 52,
     category: "traditional",
-    file_name: "traditional_12.jpg",
+    product_name: "traditional_12.jpg",
     file_path: "men/top/traditional/traditional_12.jpg",
     price: 835,
     rating: 4.42,
@@ -418,7 +418,7 @@ export const products = [
   {
     id: 53,
     category: "traditional",
-    file_name: "traditional_2.jpg",
+    product_name: "traditional_2.jpg",
     file_path: "men/top/traditional/traditional_2.jpg",
     price: 1840,
     rating: 4.2,
@@ -426,7 +426,7 @@ export const products = [
   {
     id: 54,
     category: "traditional",
-    file_name: "traditional_3.jpg",
+    product_name: "traditional_3.jpg",
     file_path: "men/top/traditional/traditional_3.jpg",
     price: 1049,
     rating: 3.95,
@@ -434,7 +434,7 @@ export const products = [
   {
     id: 55,
     category: "traditional",
-    file_name: "traditional_4.jpg",
+    product_name: "traditional_4.jpg",
     file_path: "men/top/traditional/traditional_4.jpg",
     price: 1714,
     rating: 3.36,
@@ -442,7 +442,7 @@ export const products = [
   {
     id: 56,
     category: "traditional",
-    file_name: "traditional_5.jpg",
+    product_name: "traditional_5.jpg",
     file_path: "men/top/traditional/traditional_5.jpg",
     price: 1601,
     rating: 3.64,
@@ -450,7 +450,7 @@ export const products = [
   {
     id: 57,
     category: "traditional",
-    file_name: "traditional_6.jpg",
+    product_name: "traditional_6.jpg",
     file_path: "men/top/traditional/traditional_6.jpg",
     price: 640,
     rating: 4.82,
@@ -458,7 +458,7 @@ export const products = [
   {
     id: 58,
     category: "traditional",
-    file_name: "traditional_7.jpg",
+    product_name: "traditional_7.jpg",
     file_path: "men/top/traditional/traditional_7.jpg",
     price: 528,
     rating: 3.29,
@@ -466,7 +466,7 @@ export const products = [
   {
     id: 59,
     category: "traditional",
-    file_name: "traditional_8.jpg",
+    product_name: "traditional_8.jpg",
     file_path: "men/top/traditional/traditional_8.jpg",
     price: 656,
     rating: 4.33,
@@ -474,7 +474,7 @@ export const products = [
   {
     id: 60,
     category: "traditional",
-    file_name: "traditional_9.jpg",
+    product_name: "traditional_9.jpg",
     file_path: "men/top/traditional/traditional_9.jpg",
     price: 1398,
     rating: 3.38,
@@ -482,7 +482,7 @@ export const products = [
   {
     id: 61,
     category: "jeans",
-    file_name: "jeans_1.jpg",
+    product_name: "jeans_1.jpg",
     file_path: "women/bottoms/jeans/jeans_1.jpg",
     price: 704,
     rating: 3.2,
@@ -490,7 +490,7 @@ export const products = [
   {
     id: 62,
     category: "jeans",
-    file_name: "jeans_10.jpg",
+    product_name: "jeans_10.jpg",
     file_path: "women/bottoms/jeans/jeans_10.jpg",
     price: 697,
     rating: 3.13,
@@ -498,7 +498,7 @@ export const products = [
   {
     id: 63,
     category: "jeans",
-    file_name: "jeans_11.jpg",
+    product_name: "jeans_11.jpg",
     file_path: "women/bottoms/jeans/jeans_11.jpg",
     price: 1848,
     rating: 3.31,
@@ -506,7 +506,7 @@ export const products = [
   {
     id: 64,
     category: "jeans",
-    file_name: "jeans_12.jpg",
+    product_name: "jeans_12.jpg",
     file_path: "women/bottoms/jeans/jeans_12.jpg",
     price: 1533,
     rating: 4.94,
@@ -514,7 +514,7 @@ export const products = [
   {
     id: 65,
     category: "jeans",
-    file_name: "jeans_2.jpg",
+    product_name: "jeans_2.jpg",
     file_path: "women/bottoms/jeans/jeans_2.jpg",
     price: 557,
     rating: 4.0,
@@ -522,7 +522,7 @@ export const products = [
   {
     id: 66,
     category: "jeans",
-    file_name: "jeans_3.jpg",
+    product_name: "jeans_3.jpg",
     file_path: "women/bottoms/jeans/jeans_3.jpg",
     price: 1976,
     rating: 3.94,
@@ -530,7 +530,7 @@ export const products = [
   {
     id: 67,
     category: "jeans",
-    file_name: "jeans_4.jpg",
+    product_name: "jeans_4.jpg",
     file_path: "women/bottoms/jeans/jeans_4.jpg",
     price: 1260,
     rating: 3.03,
@@ -538,7 +538,7 @@ export const products = [
   {
     id: 68,
     category: "jeans",
-    file_name: "jeans_5.jpg",
+    product_name: "jeans_5.jpg",
     file_path: "women/bottoms/jeans/jeans_5.jpg",
     price: 1706,
     rating: 4.45,
@@ -546,7 +546,7 @@ export const products = [
   {
     id: 69,
     category: "jeans",
-    file_name: "jeans_6.jpg",
+    product_name: "jeans_6.jpg",
     file_path: "women/bottoms/jeans/jeans_6.jpg",
     price: 1662,
     rating: 3.56,
@@ -554,7 +554,7 @@ export const products = [
   {
     id: 70,
     category: "jeans",
-    file_name: "jeans_7.jpg",
+    product_name: "jeans_7.jpg",
     file_path: "women/bottoms/jeans/jeans_7.jpg",
     price: 1461,
     rating: 3.62,
@@ -562,7 +562,7 @@ export const products = [
   {
     id: 71,
     category: "jeans",
-    file_name: "jeans_8.jpg",
+    product_name: "jeans_8.jpg",
     file_path: "women/bottoms/jeans/jeans_8.jpg",
     price: 973,
     rating: 3.7,
@@ -570,7 +570,7 @@ export const products = [
   {
     id: 72,
     category: "jeans",
-    file_name: "jeans_9.jpg",
+    product_name: "jeans_9.jpg",
     file_path: "women/bottoms/jeans/jeans_9.jpg",
     price: 560,
     rating: 4.24,
@@ -578,7 +578,7 @@ export const products = [
   {
     id: 73,
     category: "pants",
-    file_name: "pants_1.jpg",
+    product_name: "pants_1.jpg",
     file_path: "women/bottoms/pants/pants_1.jpg",
     price: 563,
     rating: 3.48,
@@ -586,7 +586,7 @@ export const products = [
   {
     id: 74,
     category: "pants",
-    file_name: "pants_10.jpg",
+    product_name: "pants_10.jpg",
     file_path: "women/bottoms/pants/pants_10.jpg",
     price: 1102,
     rating: 4.09,
@@ -594,7 +594,7 @@ export const products = [
   {
     id: 75,
     category: "pants",
-    file_name: "pants_11.jpg",
+    product_name: "pants_11.jpg",
     file_path: "women/bottoms/pants/pants_11.jpg",
     price: 1644,
     rating: 4.58,
@@ -602,7 +602,7 @@ export const products = [
   {
     id: 76,
     category: "pants",
-    file_name: "pants_12.jpg",
+    product_name: "pants_12.jpg",
     file_path: "women/bottoms/pants/pants_12.jpg",
     price: 796,
     rating: 4.78,
@@ -610,7 +610,7 @@ export const products = [
   {
     id: 77,
     category: "pants",
-    file_name: "pants_2.jpg",
+    product_name: "pants_2.jpg",
     file_path: "women/bottoms/pants/pants_2.jpg",
     price: 698,
     rating: 4.36,
@@ -618,7 +618,7 @@ export const products = [
   {
     id: 78,
     category: "pants",
-    file_name: "pants_3.jpg",
+    product_name: "pants_3.jpg",
     file_path: "women/bottoms/pants/pants_3.jpg",
     price: 1576,
     rating: 3.53,
@@ -626,7 +626,7 @@ export const products = [
   {
     id: 79,
     category: "pants",
-    file_name: "pants_4.jpg",
+    product_name: "pants_4.jpg",
     file_path: "women/bottoms/pants/pants_4.jpg",
     price: 350,
     rating: 4.08,
@@ -634,7 +634,7 @@ export const products = [
   {
     id: 80,
     category: "pants",
-    file_name: "pants_5.jpg",
+    product_name: "pants_5.jpg",
     file_path: "women/bottoms/pants/pants_5.jpg",
     price: 1916,
     rating: 3.8,
@@ -642,7 +642,7 @@ export const products = [
   {
     id: 81,
     category: "pants",
-    file_name: "pants_6.jpg",
+    product_name: "pants_6.jpg",
     file_path: "women/bottoms/pants/pants_6.jpg",
     price: 507,
     rating: 3.37,
@@ -650,7 +650,7 @@ export const products = [
   {
     id: 82,
     category: "pants",
-    file_name: "pants_7.jpg",
+    product_name: "pants_7.jpg",
     file_path: "women/bottoms/pants/pants_7.jpg",
     price: 650,
     rating: 4.5,
@@ -658,7 +658,7 @@ export const products = [
   {
     id: 83,
     category: "pants",
-    file_name: "pants_8.jpg",
+    product_name: "pants_8.jpg",
     file_path: "women/bottoms/pants/pants_8.jpg",
     price: 1417,
     rating: 4.85,
@@ -666,7 +666,7 @@ export const products = [
   {
     id: 84,
     category: "pants",
-    file_name: "pants_9.jpg",
+    product_name: "pants_9.jpg",
     file_path: "women/bottoms/pants/pants_9.jpg",
     price: 567,
     rating: 4.83,
@@ -674,7 +674,7 @@ export const products = [
   {
     id: 85,
     category: "skirts",
-    file_name: "skirts_1.jpg",
+    product_name: "skirts_1.jpg",
     file_path: "women/bottoms/skirts/skirts_1.jpg",
     price: 1365,
     rating: 4.03,
@@ -682,7 +682,7 @@ export const products = [
   {
     id: 86,
     category: "skirts",
-    file_name: "skirts_10.jpg",
+    product_name: "skirts_10.jpg",
     file_path: "women/bottoms/skirts/skirts_10.jpg",
     price: 1288,
     rating: 3.53,
@@ -690,7 +690,7 @@ export const products = [
   {
     id: 87,
     category: "skirts",
-    file_name: "skirts_11.jpg",
+    product_name: "skirts_11.jpg",
     file_path: "women/bottoms/skirts/skirts_11.jpg",
     price: 1740,
     rating: 3.49,
@@ -698,7 +698,7 @@ export const products = [
   {
     id: 88,
     category: "skirts",
-    file_name: "skirts_12.jpg",
+    product_name: "skirts_12.jpg",
     file_path: "women/bottoms/skirts/skirts_12.jpg",
     price: 870,
     rating: 3.67,
@@ -706,7 +706,7 @@ export const products = [
   {
     id: 89,
     category: "skirts",
-    file_name: "skirts_2.jpg",
+    product_name: "skirts_2.jpg",
     file_path: "women/bottoms/skirts/skirts_2.jpg",
     price: 1834,
     rating: 3.68,
@@ -714,7 +714,7 @@ export const products = [
   {
     id: 90,
     category: "skirts",
-    file_name: "skirts_3.jpg",
+    product_name: "skirts_3.jpg",
     file_path: "women/bottoms/skirts/skirts_3.jpg",
     price: 1084,
     rating: 4.44,
@@ -722,7 +722,7 @@ export const products = [
   {
     id: 91,
     category: "skirts",
-    file_name: "skirts_4.jpg",
+    product_name: "skirts_4.jpg",
     file_path: "women/bottoms/skirts/skirts_4.jpg",
     price: 638,
     rating: 4.34,
@@ -730,7 +730,7 @@ export const products = [
   {
     id: 92,
     category: "skirts",
-    file_name: "skirts_5.jpg",
+    product_name: "skirts_5.jpg",
     file_path: "women/bottoms/skirts/skirts_5.jpg",
     price: 1902,
     rating: 4.07,
@@ -738,7 +738,7 @@ export const products = [
   {
     id: 93,
     category: "skirts",
-    file_name: "skirts_6.jpg",
+    product_name: "skirts_6.jpg",
     file_path: "women/bottoms/skirts/skirts_6.jpg",
     price: 1486,
     rating: 3.14,
@@ -746,7 +746,7 @@ export const products = [
   {
     id: 94,
     category: "skirts",
-    file_name: "skirts_7.jpg",
+    product_name: "skirts_7.jpg",
     file_path: "women/bottoms/skirts/skirts_7.jpg",
     price: 956,
     rating: 3.81,
@@ -754,7 +754,7 @@ export const products = [
   {
     id: 95,
     category: "skirts",
-    file_name: "skirts_8.jpg",
+    product_name: "skirts_8.jpg",
     file_path: "women/bottoms/skirts/skirts_8.jpg",
     price: 1213,
     rating: 4.85,
@@ -762,7 +762,7 @@ export const products = [
   {
     id: 96,
     category: "skirts",
-    file_name: "skirts_9.jpg",
+    product_name: "skirts_9.jpg",
     file_path: "women/bottoms/skirts/skirts_9.jpg",
     price: 1470,
     rating: 4.59,
@@ -770,7 +770,7 @@ export const products = [
   {
     id: 97,
     category: "casual dresses",
-    file_name: "casual dresses_1.jpg",
+    product_name: "casual dresses_1.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_1.jpg",
     price: 835,
     rating: 3.5,
@@ -778,7 +778,7 @@ export const products = [
   {
     id: 98,
     category: "casual dresses",
-    file_name: "casual dresses_10.jpg",
+    product_name: "casual dresses_10.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_10.jpg",
     price: 428,
     rating: 4.91,
@@ -786,7 +786,7 @@ export const products = [
   {
     id: 99,
     category: "casual dresses",
-    file_name: "casual dresses_11.jpg",
+    product_name: "casual dresses_11.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_11.jpg",
     price: 1326,
     rating: 4.2,
@@ -794,7 +794,7 @@ export const products = [
   {
     id: 100,
     category: "casual dresses",
-    file_name: "casual dresses_12.jpg",
+    product_name: "casual dresses_12.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_12.jpg",
     price: 1909,
     rating: 3.94,
@@ -802,7 +802,7 @@ export const products = [
   {
     id: 101,
     category: "casual dresses",
-    file_name: "casual dresses_2.jpg",
+    product_name: "casual dresses_2.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_2.jpg",
     price: 449,
     rating: 3.02,
@@ -810,7 +810,7 @@ export const products = [
   {
     id: 102,
     category: "casual dresses",
-    file_name: "casual dresses_3.jpg",
+    product_name: "casual dresses_3.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_3.jpg",
     price: 1131,
     rating: 4.66,
@@ -818,7 +818,7 @@ export const products = [
   {
     id: 103,
     category: "casual dresses",
-    file_name: "casual dresses_4.jpg",
+    product_name: "casual dresses_4.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_4.jpg",
     price: 1748,
     rating: 3.86,
@@ -826,7 +826,7 @@ export const products = [
   {
     id: 104,
     category: "casual dresses",
-    file_name: "casual dresses_5.jpg",
+    product_name: "casual dresses_5.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_5.jpg",
     price: 684,
     rating: 3.39,
@@ -834,7 +834,7 @@ export const products = [
   {
     id: 105,
     category: "casual dresses",
-    file_name: "casual dresses_6.jpg",
+    product_name: "casual dresses_6.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_6.jpg",
     price: 899,
     rating: 4.72,
@@ -842,7 +842,7 @@ export const products = [
   {
     id: 106,
     category: "casual dresses",
-    file_name: "casual dresses_7.jpg",
+    product_name: "casual dresses_7.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_7.jpg",
     price: 304,
     rating: 3.04,
@@ -850,7 +850,7 @@ export const products = [
   {
     id: 107,
     category: "casual dresses",
-    file_name: "casual dresses_8.jpg",
+    product_name: "casual dresses_8.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_8.jpg",
     price: 1987,
     rating: 3.69,
@@ -858,7 +858,7 @@ export const products = [
   {
     id: 108,
     category: "casual dresses",
-    file_name: "casual dresses_9.jpg",
+    product_name: "casual dresses_9.jpg",
     file_path: "women/dresses/casual dresses/casual dresses_9.jpg",
     price: 317,
     rating: 3.11,
@@ -866,7 +866,7 @@ export const products = [
   {
     id: 109,
     category: "formal dresses",
-    file_name: "formal dresses_1.jpg",
+    product_name: "formal dresses_1.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_1.jpg",
     price: 1316,
     rating: 4.63,
@@ -874,7 +874,7 @@ export const products = [
   {
     id: 110,
     category: "formal dresses",
-    file_name: "formal dresses_10.jpg",
+    product_name: "formal dresses_10.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_10.jpg",
     price: 1850,
     rating: 3.6,
@@ -882,7 +882,7 @@ export const products = [
   {
     id: 111,
     category: "formal dresses",
-    file_name: "formal dresses_11.jpg",
+    product_name: "formal dresses_11.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_11.jpg",
     price: 1621,
     rating: 4.46,
@@ -890,7 +890,7 @@ export const products = [
   {
     id: 112,
     category: "formal dresses",
-    file_name: "formal dresses_12.jpg",
+    product_name: "formal dresses_12.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_12.jpg",
     price: 308,
     rating: 3.73,
@@ -898,7 +898,7 @@ export const products = [
   {
     id: 113,
     category: "formal dresses",
-    file_name: "formal dresses_2.jpg",
+    product_name: "formal dresses_2.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_2.jpg",
     price: 929,
     rating: 4.56,
@@ -906,7 +906,7 @@ export const products = [
   {
     id: 114,
     category: "formal dresses",
-    file_name: "formal dresses_3.jpg",
+    product_name: "formal dresses_3.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_3.jpg",
     price: 1680,
     rating: 4.86,
@@ -914,7 +914,7 @@ export const products = [
   {
     id: 115,
     category: "formal dresses",
-    file_name: "formal dresses_4.jpg",
+    product_name: "formal dresses_4.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_4.jpg",
     price: 1527,
     rating: 3.56,
@@ -922,7 +922,7 @@ export const products = [
   {
     id: 116,
     category: "formal dresses",
-    file_name: "formal dresses_5.jpg",
+    product_name: "formal dresses_5.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_5.jpg",
     price: 1599,
     rating: 4.52,
@@ -930,7 +930,7 @@ export const products = [
   {
     id: 117,
     category: "formal dresses",
-    file_name: "formal dresses_6.jpg",
+    product_name: "formal dresses_6.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_6.jpg",
     price: 856,
     rating: 4.24,
@@ -938,7 +938,7 @@ export const products = [
   {
     id: 118,
     category: "formal dresses",
-    file_name: "formal dresses_7.jpg",
+    product_name: "formal dresses_7.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_7.jpg",
     price: 486,
     rating: 4.65,
@@ -946,7 +946,7 @@ export const products = [
   {
     id: 119,
     category: "formal dresses",
-    file_name: "formal dresses_8.jpg",
+    product_name: "formal dresses_8.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_8.jpg",
     price: 1256,
     rating: 4.79,
@@ -954,7 +954,7 @@ export const products = [
   {
     id: 120,
     category: "formal dresses",
-    file_name: "formal dresses_9.jpg",
+    product_name: "formal dresses_9.jpg",
     file_path: "women/dresses/formal dresses/formal dresses_9.jpg",
     price: 1501,
     rating: 3.97,
@@ -962,7 +962,7 @@ export const products = [
   {
     id: 121,
     category: "traditional dresses",
-    file_name: "traditional dresses_1.jpg",
+    product_name: "traditional dresses_1.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_1.jpg",
     price: 614,
     rating: 3.2,
@@ -970,7 +970,7 @@ export const products = [
   {
     id: 122,
     category: "traditional dresses",
-    file_name: "traditional dresses_10.jpg",
+    product_name: "traditional dresses_10.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_10.jpg",
     price: 1672,
     rating: 3.69,
@@ -978,7 +978,7 @@ export const products = [
   {
     id: 123,
     category: "traditional dresses",
-    file_name: "traditional dresses_11.jpg",
+    product_name: "traditional dresses_11.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_11.jpg",
     price: 491,
     rating: 3.89,
@@ -986,7 +986,7 @@ export const products = [
   {
     id: 124,
     category: "traditional dresses",
-    file_name: "traditional dresses_12.jpg",
+    product_name: "traditional dresses_12.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_12.jpg",
     price: 378,
     rating: 4.78,
@@ -994,7 +994,7 @@ export const products = [
   {
     id: 125,
     category: "traditional dresses",
-    file_name: "traditional dresses_2.jpg",
+    product_name: "traditional dresses_2.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_2.jpg",
     price: 990,
     rating: 4.53,
@@ -1002,7 +1002,7 @@ export const products = [
   {
     id: 126,
     category: "traditional dresses",
-    file_name: "traditional dresses_3.jpg",
+    product_name: "traditional dresses_3.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_3.jpg",
     price: 1069,
     rating: 3.45,
@@ -1010,7 +1010,7 @@ export const products = [
   {
     id: 127,
     category: "traditional dresses",
-    file_name: "traditional dresses_4.jpg",
+    product_name: "traditional dresses_4.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_4.jpg",
     price: 1135,
     rating: 3.98,
@@ -1018,7 +1018,7 @@ export const products = [
   {
     id: 128,
     category: "traditional dresses",
-    file_name: "traditional dresses_5.jpg",
+    product_name: "traditional dresses_5.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_5.jpg",
     price: 533,
     rating: 4.77,
@@ -1026,7 +1026,7 @@ export const products = [
   {
     id: 129,
     category: "traditional dresses",
-    file_name: "traditional dresses_6.jpg",
+    product_name: "traditional dresses_6.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_6.jpg",
     price: 793,
     rating: 4.92,
@@ -1034,7 +1034,7 @@ export const products = [
   {
     id: 130,
     category: "traditional dresses",
-    file_name: "traditional dresses_7.jpg",
+    product_name: "traditional dresses_7.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_7.jpg",
     price: 1715,
     rating: 4.84,
@@ -1042,7 +1042,7 @@ export const products = [
   {
     id: 131,
     category: "traditional dresses",
-    file_name: "traditional dresses_8.jpg",
+    product_name: "traditional dresses_8.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_8.jpg",
     price: 469,
     rating: 4.25,
@@ -1050,7 +1050,7 @@ export const products = [
   {
     id: 132,
     category: "traditional dresses",
-    file_name: "traditional dresses_9.jpg",
+    product_name: "traditional dresses_9.jpg",
     file_path: "women/dresses/traditional dresses/traditional dresses_9.jpg",
     price: 1011,
     rating: 4.87,
@@ -1058,7 +1058,7 @@ export const products = [
   {
     id: 133,
     category: "casual tops",
-    file_name: "casual tops_1.jpg",
+    product_name: "casual tops_1.jpg",
     file_path: "women/tops/casual tops/casual tops_1.jpg",
     price: 1129,
     rating: 4.76,
@@ -1066,7 +1066,7 @@ export const products = [
   {
     id: 134,
     category: "casual tops",
-    file_name: "casual tops_10.jpg",
+    product_name: "casual tops_10.jpg",
     file_path: "women/tops/casual tops/casual tops_10.jpg",
     price: 1155,
     rating: 4.78,
@@ -1074,7 +1074,7 @@ export const products = [
   {
     id: 135,
     category: "casual tops",
-    file_name: "casual tops_11.jpg",
+    product_name: "casual tops_11.jpg",
     file_path: "women/tops/casual tops/casual tops_11.jpg",
     price: 678,
     rating: 4.85,
@@ -1082,7 +1082,7 @@ export const products = [
   {
     id: 136,
     category: "casual tops",
-    file_name: "casual tops_12.jpg",
+    product_name: "casual tops_12.jpg",
     file_path: "women/tops/casual tops/casual tops_12.jpg",
     price: 1436,
     rating: 3.99,
@@ -1090,7 +1090,7 @@ export const products = [
   {
     id: 137,
     category: "casual tops",
-    file_name: "casual tops_2.jpg",
+    product_name: "casual tops_2.jpg",
     file_path: "women/tops/casual tops/casual tops_2.jpg",
     price: 641,
     rating: 4.42,
@@ -1098,7 +1098,7 @@ export const products = [
   {
     id: 138,
     category: "casual tops",
-    file_name: "casual tops_3.jpg",
+    product_name: "casual tops_3.jpg",
     file_path: "women/tops/casual tops/casual tops_3.jpg",
     price: 941,
     rating: 3.5,
@@ -1106,7 +1106,7 @@ export const products = [
   {
     id: 139,
     category: "casual tops",
-    file_name: "casual tops_4.jpg",
+    product_name: "casual tops_4.jpg",
     file_path: "women/tops/casual tops/casual tops_4.jpg",
     price: 1108,
     rating: 4.52,
@@ -1114,7 +1114,7 @@ export const products = [
   {
     id: 140,
     category: "casual tops",
-    file_name: "casual tops_5.jpg",
+    product_name: "casual tops_5.jpg",
     file_path: "women/tops/casual tops/casual tops_5.jpg",
     price: 432,
     rating: 3.47,
@@ -1122,7 +1122,7 @@ export const products = [
   {
     id: 141,
     category: "casual tops",
-    file_name: "casual tops_6.jpg",
+    product_name: "casual tops_6.jpg",
     file_path: "women/tops/casual tops/casual tops_6.jpg",
     price: 508,
     rating: 3.23,
@@ -1130,7 +1130,7 @@ export const products = [
   {
     id: 142,
     category: "casual tops",
-    file_name: "casual tops_7.jpg",
+    product_name: "casual tops_7.jpg",
     file_path: "women/tops/casual tops/casual tops_7.jpg",
     price: 1948,
     rating: 4.63,
@@ -1138,7 +1138,7 @@ export const products = [
   {
     id: 143,
     category: "casual tops",
-    file_name: "casual tops_8.jpg",
+    product_name: "casual tops_8.jpg",
     file_path: "women/tops/casual tops/casual tops_8.jpg",
     price: 616,
     rating: 3.93,
@@ -1146,7 +1146,7 @@ export const products = [
   {
     id: 144,
     category: "casual tops",
-    file_name: "casual tops_9.jpg",
+    product_name: "casual tops_9.jpg",
     file_path: "women/tops/casual tops/casual tops_9.jpg",
     price: 1466,
     rating: 3.42,
@@ -1154,7 +1154,7 @@ export const products = [
   {
     id: 145,
     category: "formal tops",
-    file_name: "formal tops_1.jpg",
+    product_name: "formal tops_1.jpg",
     file_path: "women/tops/formal tops/formal tops_1.jpg",
     price: 492,
     rating: 3.94,
@@ -1162,7 +1162,7 @@ export const products = [
   {
     id: 146,
     category: "formal tops",
-    file_name: "formal tops_10.jpg",
+    product_name: "formal tops_10.jpg",
     file_path: "women/tops/formal tops/formal tops_10.jpg",
     price: 921,
     rating: 4.18,
@@ -1170,7 +1170,7 @@ export const products = [
   {
     id: 147,
     category: "formal tops",
-    file_name: "formal tops_11.jpg",
+    product_name: "formal tops_11.jpg",
     file_path: "women/tops/formal tops/formal tops_11.jpg",
     price: 1882,
     rating: 4.69,
@@ -1178,7 +1178,7 @@ export const products = [
   {
     id: 148,
     category: "formal tops",
-    file_name: "formal tops_12.jpg",
+    product_name: "formal tops_12.jpg",
     file_path: "women/tops/formal tops/formal tops_12.jpg",
     price: 981,
     rating: 4.9,
@@ -1186,7 +1186,7 @@ export const products = [
   {
     id: 149,
     category: "formal tops",
-    file_name: "formal tops_2.jpg",
+    product_name: "formal tops_2.jpg",
     file_path: "women/tops/formal tops/formal tops_2.jpg",
     price: 306,
     rating: 4.09,
@@ -1194,7 +1194,7 @@ export const products = [
   {
     id: 150,
     category: "formal tops",
-    file_name: "formal tops_3.jpg",
+    product_name: "formal tops_3.jpg",
     file_path: "women/tops/formal tops/formal tops_3.jpg",
     price: 1694,
     rating: 4.12,
@@ -1202,7 +1202,7 @@ export const products = [
   {
     id: 151,
     category: "formal tops",
-    file_name: "formal tops_4.jpg",
+    product_name: "formal tops_4.jpg",
     file_path: "women/tops/formal tops/formal tops_4.jpg",
     price: 1690,
     rating: 3.24,
@@ -1210,7 +1210,7 @@ export const products = [
   {
     id: 152,
     category: "formal tops",
-    file_name: "formal tops_5.jpg",
+    product_name: "formal tops_5.jpg",
     file_path: "women/tops/formal tops/formal tops_5.jpg",
     price: 1081,
     rating: 3.27,
@@ -1218,7 +1218,7 @@ export const products = [
   {
     id: 153,
     category: "formal tops",
-    file_name: "formal tops_6.jpg",
+    product_name: "formal tops_6.jpg",
     file_path: "women/tops/formal tops/formal tops_6.jpg",
     price: 529,
     rating: 4.57,
@@ -1226,7 +1226,7 @@ export const products = [
   {
     id: 154,
     category: "formal tops",
-    file_name: "formal tops_7.jpg",
+    product_name: "formal tops_7.jpg",
     file_path: "women/tops/formal tops/formal tops_7.jpg",
     price: 1331,
     rating: 4.06,
@@ -1234,7 +1234,7 @@ export const products = [
   {
     id: 155,
     category: "formal tops",
-    file_name: "formal tops_8.jpg",
+    product_name: "formal tops_8.jpg",
     file_path: "women/tops/formal tops/formal tops_8.jpg",
     price: 1779,
     rating: 3.21,
@@ -1242,7 +1242,7 @@ export const products = [
   {
     id: 156,
     category: "formal tops",
-    file_name: "formal tops_9.jpg",
+    product_name: "formal tops_9.jpg",
     file_path: "women/tops/formal tops/formal tops_9.jpg",
     price: 1208,
     rating: 4.69,
@@ -1250,7 +1250,7 @@ export const products = [
   {
     id: 157,
     category: "traditional tops",
-    file_name: "traditional tops_1.jpg",
+    product_name: "traditional tops_1.jpg",
     file_path: "women/tops/traditional tops/traditional tops_1.jpg",
     price: 454,
     rating: 3.49,
@@ -1258,7 +1258,7 @@ export const products = [
   {
     id: 158,
     category: "traditional tops",
-    file_name: "traditional tops_10.jpg",
+    product_name: "traditional tops_10.jpg",
     file_path: "women/tops/traditional tops/traditional tops_10.jpg",
     price: 381,
     rating: 4.01,
@@ -1266,7 +1266,7 @@ export const products = [
   {
     id: 159,
     category: "traditional tops",
-    file_name: "traditional tops_11.jpg",
+    product_name: "traditional tops_11.jpg",
     file_path: "women/tops/traditional tops/traditional tops_11.jpg",
     price: 1417,
     rating: 3.66,
@@ -1274,7 +1274,7 @@ export const products = [
   {
     id: 160,
     category: "traditional tops",
-    file_name: "traditional tops_12.jpg",
+    product_name: "traditional tops_12.jpg",
     file_path: "women/tops/traditional tops/traditional tops_12.jpg",
     price: 807,
     rating: 3.17,
@@ -1282,7 +1282,7 @@ export const products = [
   {
     id: 161,
     category: "traditional tops",
-    file_name: "traditional tops_2.jpg",
+    product_name: "traditional tops_2.jpg",
     file_path: "women/tops/traditional tops/traditional tops_2.jpg",
     price: 764,
     rating: 4.39,
@@ -1290,7 +1290,7 @@ export const products = [
   {
     id: 162,
     category: "traditional tops",
-    file_name: "traditional tops_3.jpg",
+    product_name: "traditional tops_3.jpg",
     file_path: "women/tops/traditional tops/traditional tops_3.jpg",
     price: 1942,
     rating: 4.45,
@@ -1298,7 +1298,7 @@ export const products = [
   {
     id: 163,
     category: "traditional tops",
-    file_name: "traditional tops_4.jpg",
+    product_name: "traditional tops_4.jpg",
     file_path: "women/tops/traditional tops/traditional tops_4.jpg",
     price: 389,
     rating: 3.55,
@@ -1306,7 +1306,7 @@ export const products = [
   {
     id: 164,
     category: "traditional tops",
-    file_name: "traditional tops_5.jpg",
+    product_name: "traditional tops_5.jpg",
     file_path: "women/tops/traditional tops/traditional tops_5.jpg",
     price: 1887,
     rating: 4.7,
@@ -1314,7 +1314,7 @@ export const products = [
   {
     id: 165,
     category: "traditional tops",
-    file_name: "traditional tops_6.jpg",
+    product_name: "traditional tops_6.jpg",
     file_path: "women/tops/traditional tops/traditional tops_6.jpg",
     price: 638,
     rating: 3.66,
@@ -1322,7 +1322,7 @@ export const products = [
   {
     id: 166,
     category: "traditional tops",
-    file_name: "traditional tops_7.jpg",
+    product_name: "traditional tops_7.jpg",
     file_path: "women/tops/traditional tops/traditional tops_7.jpg",
     price: 1071,
     rating: 3.92,
@@ -1330,7 +1330,7 @@ export const products = [
   {
     id: 167,
     category: "traditional tops",
-    file_name: "traditional tops_8.jpg",
+    product_name: "traditional tops_8.jpg",
     file_path: "women/tops/traditional tops/traditional tops_8.jpg",
     price: 1900,
     rating: 4.26,
@@ -1338,7 +1338,7 @@ export const products = [
   {
     id: 168,
     category: "traditional tops",
-    file_name: "traditional tops_9.jpg",
+    product_name: "traditional tops_9.jpg",
     file_path: "women/tops/traditional tops/traditional tops_9.jpg",
     price: 640,
     rating: 3.51,

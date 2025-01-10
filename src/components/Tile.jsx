@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const TileContainer = styled.div`
   border: 1px solid black;
   text-align: center;
+  cursor: pointer;
 `;
 
 const Image = styled.img`
@@ -39,9 +40,9 @@ const FileName = styled.div`
   color: #777;
 `;
 
-function Tile({ imageSrc, altText, price, rating, category, fileName }) {
+function Tile({ imageSrc, altText, price, rating, category, fileName, onClick }) {
   return (
-    <TileContainer>
+    <TileContainer onClick={onClick}>
       <Image src={`../src/assets/images/${imageSrc}`} alt={altText} />
       <Category>{category}</Category>
       <FileName>{fileName}</FileName>

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Tile from '../components/Tile';
 import { products } from '../utils/products';
+import { useNavigate } from "react-router-dom";
 
 const GridContainer = styled.div`
   display: grid;
@@ -10,21 +11,50 @@ const GridContainer = styled.div`
   padding: 16px;
 `;
 
+const categories = ['All', 'Bottoms', 'Topwear', 'Dresses', 'Tops'];
+
 const ImageGrid = () => {
+  const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const filteredProducts = selectedCategory === 'All'
+    ? products
+    : products.filter(product => product.category === selectedCategory);
+
   return (
     <>
       <h1>Explore Products</h1>
+      <div>
+        {categories.map(category => (
+          <button
+            key={category}
+            onClick={() => handleCategoryChange(category)}
+            style={{ margin: '0 8px', padding: '8px 16px' }}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
       <GridContainer>
-        {products.length > 0 ? (
-          products.map(({ id, category, file_path, file_name, price, rating }) => (
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map(({ id, category, file_path, product_name, price, rating }) => (
             <Tile
               key={id}
               imageSrc={file_path}
-              altText={`Image of ${file_name}`}
+              altText={`Image of ${product_name}`}
               price={price}
               rating={rating}
               category={category}
-              fileName={file_name}
+              fileName={product_name}
+              onClick={() => handleProductClick(id)}
             />
           ))
         ) : (

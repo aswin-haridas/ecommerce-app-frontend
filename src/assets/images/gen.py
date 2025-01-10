@@ -25,7 +25,7 @@ def generate_file_list():
                         file_data.append({
                             id: len(file_data) + 1,
                             category: parent_folder,
-                            file_name: filename,
+                            product_name: filename,
                             file_path: react_path,
                             price:random.randint(300, 2000),
                             rating:random.uniform(3, 5).__round__(2),

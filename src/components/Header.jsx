@@ -38,10 +38,16 @@ const ExploreButton = styled.div`
 
 const Header = ({ onMouseEnter }) => {
 
-  const navigate=useNavigate();
-  const goToLogin=()=>{
+  const navigate = useNavigate();
+  const goToLogin = () => {
     navigate('/auth');
   };
+  const goToWishlist = () => {
+    navigate('/wishlist');
+  }
+  const goToCart = () => {
+    navigate('/cart');
+  }
 
   return (
     <HeaderContainer>
@@ -51,10 +57,10 @@ const Header = ({ onMouseEnter }) => {
       </ExploreButton>
       <SearchBox />
       <IconContainer>
-        <IconButton>
+        <IconButton onClick={goToWishlist}>
           <FavoriteBorder />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={goToCart}>
           <ShoppingBagOutlined />
         </IconButton>
         <IconButton onClick={goToLogin}>
