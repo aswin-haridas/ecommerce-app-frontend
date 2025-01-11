@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Promo from "../components/Promo";
-import Featured from "../components/Featured";
 import Footer from "../components/Footer";
 import MegaMenu from "../components/MegaMenu"; // Import MegaMenu
 import { useState } from "react"; // Import useState
+import Explore from "../components/Explore";
 
 function HomePage() {
   const [isMegaMenuOpen, setMegaMenuOpen] = useState(false);
@@ -21,9 +21,9 @@ function HomePage() {
       <Header onMouseEnter={handleMouseEnter} />
       <MegaMenu isOpen={isMegaMenuOpen} />
       <Promo />
-      <Featured />
+      <Explore />
+      {/* <Featured /> */}
       <Footer />
-      {/* ith kannan pattunnundo */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Tile from '../components/Tile';
+import Tile from './Tile';
 import { products } from '../utils/products';
 import { useNavigate } from "react-router-dom";
 
