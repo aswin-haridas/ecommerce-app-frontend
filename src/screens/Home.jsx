@@ -18,11 +18,8 @@ function HomePage() {
 
   return (
     <div onMouseLeave={handleMouseLeave}>
-      <Header onMouseEnter={handleMouseEnter} />
-      <MegaMenu isOpen={isMegaMenuOpen} />
-      <Promo />
-      <Explore />
-      {/* <Featured /> */}
+      <Header/>
+      <Products />
       <Footer />
     </div>
   );
