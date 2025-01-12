@@ -35,7 +35,11 @@ const ExploreButton = styled.div`
   display: flex;
   align-items: center;
 `;
-
+const LogoText = styled.div`
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+`;
 const Header = ({ onMouseEnter }) => {
 
   const navigate = useNavigate();
@@ -51,7 +55,8 @@ const Header = ({ onMouseEnter }) => {
 
   return (
     <HeaderContainer>
-      <Logo />
+      <LogoText>Thunikkada</LogoText>
+
       <ExploreButton onMouseEnter={onMouseEnter} onClick={onMouseEnter}>
         EXPLORE
       </ExploreButton>
