@@ -1,16 +1,9 @@
 import Header from "../components/Header";
-import Promo from "../components/Promo";
 import Footer from "../components/Footer";
-import MegaMenu from "../components/MegaMenu"; // Import MegaMenu
-import { useState } from "react"; // Import useState
-import Explore from "../components/Explore";
+import Products from "../components/Products";
+import Promo from "../components/Promo";
 
 function HomePage() {
-  const [isMegaMenuOpen, setMegaMenuOpen] = useState(false);
-
-  const handleMouseEnter = () => {
-    setMegaMenuOpen(true);
-  };
 
   const handleMouseLeave = () => {
     setMegaMenuOpen(false);
@@ -19,6 +12,7 @@ function HomePage() {
   return (
     <div onMouseLeave={handleMouseLeave}>
       <Header/>
+      <Promo/>
       <Products />
       <Footer />
     </div>
