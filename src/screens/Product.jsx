@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../utils/products'; 
+import productImage from '../assets/images/product_image.jpg'; // Adjust the path and filename as needed
 
 const ProductPage = ({ addToCart }) => {
   const { id } = useParams();
@@ -54,7 +55,7 @@ const ProductPage = ({ addToCart }) => {
     <div style={styles.container}>
       <div style={styles.imageContainer}>
         <img
-          src={require(`../assets/images/${product.file_path}`).default}
+          src={productImage} // Use the imported image
           alt={product.product_name}
           style={styles.image}
         />
