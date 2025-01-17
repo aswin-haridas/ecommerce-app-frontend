@@ -1,13 +1,43 @@
-import React from 'react';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import StripeCheckout from "react-stripe-checkout";
 
 const Checkout = () => {
+  const [stripeToken, setStripeToken] = useState(null);
+
+  const KEY =
+    "pk_test_51QhvWdG6MURsBmOTtsys8gHQRsi5zEh0VspJkpXAaAUqUrIxSuu5o1LhZSe1AdjZEAHQrzioqQZP8hEL0JioHfZQ00YTqgP2lV";
+
+  const onToken = (token) => {
+    setStripeToken(token);
+  };
+
+  useEffect(() => {
+    const makeRequest = async () => {
+      try {
+        const res = await axios.post("http:/localhost:3000/api/checkout", {
+          tokenId: stripeToken.tokenId,
+          amount:2000
+        });
+
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    stripeToken && makeRequest
+  }, [stripeToken]);
   return (
-    <div className="checkout-page">
-      <h1>Checkout</h1>
-      <p>Review your items and proceed to payment.</p>
-      {/* Add more components and logic for the checkout process */}
-    </div>
+    <StripeCheckout
+      name="attire shop"
+      billingAddress
+      shippingAddress
+      description="your total is 50"
+      amount={2000}
+      token={onToken}
+      stripeKey={KEY}
+    >
+      <button>Checkout</button>
+    </StripeCheckout>
   );
 };
-
 export default Checkout;

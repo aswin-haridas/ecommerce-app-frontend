@@ -1,22 +1,9 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Products from "../components/Products";
-import Promo from "../components/Promo";
+import React from 'react'
 
-function HomePage() {
-
-  const handleMouseLeave = () => {
-    setMegaMenuOpen(false);
-  };
-
+const Home = () => {
   return (
-    <div onMouseLeave={handleMouseLeave}>
-      <Header/>
-      <Promo/>
-      <Products />
-      <Footer />
-    </div>
-  );
+    <div>Home</div>
+  )
 }
 
-export default HomePage;
+export default Home
