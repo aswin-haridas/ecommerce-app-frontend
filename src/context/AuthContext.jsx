@@ -7,7 +7,6 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [cart, setCart] = useState([]);
   const [orders, setOrders] = useState([]);
-  const [wishlist, setWishlist] = useState([]);
   const navigate = useNavigate();
 
 
@@ -16,12 +15,10 @@ export const AuthProvider = ({ children }) => {
     const userData = localStorage.getItem('userData');
     const cartData = localStorage.getItem('cart');
     const ordersData = localStorage.getItem('orders');
-    const wishlistData = localStorage.getItem('wishlist');
 
     if (userData) setUser(JSON.parse(userData));
     if (cartData) setCart(JSON.parse(cartData));
     if (ordersData) setOrders(JSON.parse(ordersData));
-    if (wishlistData) setWishlist(JSON.parse(wishlistData));
   }, []);
 
   const login = useCallback((userData) => {
@@ -36,11 +33,9 @@ export const AuthProvider = ({ children }) => {
   const logout = useCallback(() => {
     localStorage.removeItem('userData');
     localStorage.removeItem('cart');
-    localStorage.removeItem('wishlist');
     startTransition(() => {
       setUser(null);
       setCart([]);
-      setWishlist([]);
       navigate("/");
     });
   }, [navigate]);
@@ -68,28 +63,6 @@ export const AuthProvider = ({ children }) => {
     setCart([]);
   }, []);
 
-  const addToWishlist = useCallback((product) => {
-    setWishlist(prevWishlist => {
-      const updatedWishlist = [...prevWishlist, product];
-      localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
-      return updatedWishlist;
-    });
-  }, []);
-
-  const removeFromWishlist = useCallback((productId) => {
-    setWishlist(prevWishlist => {
-      const index = prevWishlist.findIndex(item => item.id === productId);
-      if (index === -1) return prevWishlist;
-      const updatedWishlist = [...prevWishlist.slice(0, index), ...prevWishlist.slice(index + 1)];
-      localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
-      return updatedWishlist;
-    });
-  }, []);
-
-  const clearWishlist = useCallback(() => {
-    localStorage.removeItem('wishlist');
-    setWishlist([]);
-  }, []);
 
   const addOrder = useCallback((order) => {
     setOrders(prevOrders => {
@@ -112,10 +85,6 @@ export const AuthProvider = ({ children }) => {
       addToCart,
       removeFromCart,
       clearCart,
-      wishlist,
-      addToWishlist,
-      removeFromWishlist,
-      clearWishlist,
       orders,
       addOrder,
       calculateCartTotal

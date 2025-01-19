@@ -84,7 +84,7 @@ const Header = () => {
         <div>Vestri</div>
       </Logo>
       <IconContainer>
-        <FavoriteBorderOutlinedIcon onClick={() => navigate("/wishlist")} />
+        <FavoriteBorderOutlinedIcon/>
         <ShoppingBagOutlined onClick={handleCart} />
         <PersonOutlineOutlined onClick={handleProfile} />
       </IconContainer>

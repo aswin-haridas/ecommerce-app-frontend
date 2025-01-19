@@ -41,7 +41,7 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Noto Sans", serif;: Arial, sans-serif;
+  font-family: "Noto Sans", serif;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ const Title = styled.h1`
 `;
 
 const Price = styled.p`
-  font-family: "Noto Sans", serif;: Arial, sans-serif;
+  font-family: "Noto Sans", serif;
   font-size: 1.8rem;
   color: black;
   font-weight: bold;
@@ -60,7 +60,7 @@ const Price = styled.p`
 `;
 
 const Description = styled.p`
-  font-family: "Noto Sans", serif;: Arial, sans-serif;
+  font-family: "Noto Sans", serif;
   font-size: 1rem;
   line-height: 1.5;
   padding: 1rem;
@@ -98,7 +98,7 @@ const Button2 = styled.button`
   font-weight: bold;
 
   &:hover {
-    background:rgb(152, 17, 35);
+    background: rgb(152, 17, 35);
     color: white;
   }
 `;
@@ -122,6 +122,7 @@ const SizeButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
   &:hover {
     background: black;
     color: white;
@@ -151,16 +152,7 @@ const Product = () => {
 
   const navigate = useNavigate();
 
-  const addItemToCart = async (itemData) => {
-    try {
-      const response = await axios.post("/api/cart", itemData);
-      console.log("Item added:", response.data);
-    } catch (error) {
-      console.error("Error adding item:", error.response.data);
-    }
-  };
-
-  const handleAddToCart = () => {
+  const handleAddToCart = async () => {
     if (!selectedSize) {
       toast.error("Please select a size before adding to cart.");
       return;
@@ -169,15 +161,17 @@ const Product = () => {
       ...product,
       size: selectedSize,
     };
-    addToCart(cartItem);
-    addItemToCart(cartItem);
-    navigate("/cart");
+    try {
+      const response = await axios.post("/api/cart", cartItem);
+      console.log("Item added:", response.data);
+      addToCart(cartItem);
+      navigate("/cart");
+    } catch (error) {
+      console.error("Error adding item:", error.response.data);
+    }
   };
 
-  const handleAddToWishlist = () => {
-    console.log("Add to wishlist clicked");
-    toast.success("Item added to wishlist!");
-  };
+  
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -200,15 +194,17 @@ const Product = () => {
       <Header />
       <ProductContainer>
         <ImageContainer>
-          <ProductImage src={product.img} alt={product.title} />
+          <ProductImage
+            src={product.img || "/placeholder-image.png"}
+            alt={product.title || "Product Image"}
+          />
         </ImageContainer>
         <InfoContainer>
-          <Title>{product.title}</Title>
-          <Price>₹{product.price}</Price>
+          <Title>{product.title || "No title available"}</Title>
+          <Price>₹{product.price || "N/A"}</Price>
           <Description>
             {product.desc || "No description available"}
           </Description>
-
           <div>
             <h3>Available Sizes:</h3>
             <SizeContainer>
@@ -224,7 +220,6 @@ const Product = () => {
                 ))}
             </SizeContainer>
           </div>
-
           <div>
             <h3>Categories:</h3>
             <CategoryTags>
@@ -232,13 +227,9 @@ const Product = () => {
                 product.category.map((cat) => <Tag key={cat}>{cat}</Tag>)}
             </CategoryTags>
           </div>
-
           <Button onClick={handleAddToCart} disabled={!selectedSize}>
             {selectedSize ? "Add to Cart" : "Select a Size"}
-          </Button>
-          <Button2 onClick={handleAddToWishlist} disabled={!selectedSize}>
-            {selectedSize ? "Add to Wishlist" : "Already in Wishlist"}
-          </Button2>
+          </Button>{" "}
         </InfoContainer>
       </ProductContainer>
     </>
