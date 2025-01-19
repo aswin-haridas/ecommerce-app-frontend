@@ -36,28 +36,28 @@ const WishlistButton = styled.button`
 `;
 
 const Wishlist = () => {
-  const [products, setProducts] = useState([]); // Mock product list
+  const [products, setProducts] = useState([]);
   const [wishlist, setWishlist] = useState([]);
 
-  // Fetch products (mocked for now)
+  // Fetch products from MongoDB
   useEffect(() => {
     const fetchProducts = async () => {
-      const mockProducts = [
-        { _id: "1", name: "Product 1" },
-        { _id: "2", name: "Product 2" },
-        { _id: "3", name: "Product 3" },
-      ];
-      setProducts(mockProducts);
+      try {
+        const response = await axios.get("/api/products");
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Failed to fetch products:", error);
+      }
     };
 
     fetchProducts();
   }, []);
 
-  // Fetch wishlist
+  // Fetch wishlist from MongoDB
   useEffect(() => {
     const fetchWishlist = async () => {
       try {
-        const response = await axios.get("/wishlist");
+        const response = await axios.get("/api/wishlist");
         setWishlist(response.data.products || []);
       } catch (error) {
         console.error("Failed to fetch wishlist:", error);
@@ -69,7 +69,7 @@ const Wishlist = () => {
 
   const toggleWishlist = async (productId) => {
     try {
-      await axios.post("/wishlist", { productId });
+      await axios.post("/api/wishlist", { productId });
       setWishlist((prevWishlist) =>
         prevWishlist.includes(productId)
           ? prevWishlist.filter((id) => id !== productId)
