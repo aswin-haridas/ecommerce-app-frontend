@@ -1,228 +1,200 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useCallback } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import { loadStripe } from "@stripe/stripe-js";
+import {
+  EmbeddedCheckoutProvider,
+  EmbeddedCheckout,
+} from "@stripe/react-stripe-js";
+import axios from "axios";
+import { useAuth } from "../context/AuthContext";
+// Stripe Initialization
+import STRIPE_SECRET_KEY from "../services/stripe";
+import StripeCheckout from "react-stripe-checkout";
+const stripePromise = loadStripe(STRIPE_SECRET_KEY);
 
 // Styled Components
-const Container = styled.div`
-  max-width: 80%;
+const Wrapper = styled.div`
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
 `;
 
-const Header = styled.h1`
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-`;
-
-const Content = styled.div`
+const CartContainer = styled.div`
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  background: white;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
 `;
 
-const CartItemsWrapper = styled.div`
-  flex: 3;
-  border: 1px solid #ddd;
-  padding: 10px;
+const CartTitle = styled.h1`
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+`;
+
+const CartItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 const CartItem = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-
-  &:last-child {
-    border-bottom: none;
-  }
-`;
-
-const ItemDetails = styled.div`
-  flex: 2;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
 `;
 
 const ItemImage = styled.img`
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  margin-right: 16px;
+  margin-right: 20px;
 `;
 
-const ItemName = styled.p`
+const ItemInfo = styled.div`
+  flex: 1;
+`;
+
+const ItemTitle = styled.h2`
   font-size: 16px;
-  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #000;
+`;
+
+const ItemDescription = styled.p`
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  color: #666;
+  margin-bottom: 10px;
 `;
 
 const ItemPrice = styled.p`
   font-size: 14px;
-  color: #777;
+  margin: 0 0 5px 0;
+  color: #333;
 `;
 
-const QuantityControls = styled.div`
-  display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: center;
-`;
-
-const Button = styled.button`
-  padding: 5px 10px;
-  margin: 0 5px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  background: #f5f5f5;
-  transition: background 0.2s;
-
-  &:hover {
-    background: #e0e0e0;
-  }
-`;
-
-const Quantity = styled.p`
-  margin: 0 10px;
+const ItemSize = styled.p`
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px 0;
 `;
 
 const RemoveButton = styled.button`
-  flex: 1;
+  background: none;
+  border: 1px solid #000;
   padding: 5px 10px;
-  border: none;
-  background: #ff4d4d;
-  color: #fff;
   cursor: pointer;
-  transition: background 0.2s;
+  font-size: 12px;
+  transition: all 0.2s;
 
   &:hover {
-    background: #e63939;
+    background: #000;
+    color: #fff;
   }
 `;
 
-const EmptyCart = styled.p`
-  text-align: center;
-  color: #999;
-`;
+const CartSummary = styled.div`
+width: 30%;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
 
-const Summary = styled.div`
-  flex: 1;
-  border: 1px solid #ddd;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-`;
-
-const TotalAmount = styled.h2`
-  margin-bottom: 20px;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+  }
 `;
 
 const CheckoutButton = styled.button`
-  padding: 10px 20px;
-  width:100%;
-  background: #333;
+margin-top: 20px;
+width: 100%;
+  background: #000;
   color: #fff;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
+  font-size: 16px;
+  
+`
 
-  &:hover {
-    background: #555;
+// Cart Component
+const Cart = () => {
+  const { cart, removeFromCart, calculateCartTotal } = useAuth();
+
+  const [token, setToken] = useState(null);
+  const onToken = (token)=> {
+    setToken(token)
   }
-`;
 
-// React Component
-const CartPage = () => {
-  const [cartItems, setCartItems] = useState([
-    {
-      id: 1,
-      title: "Women Notched Lapel Collar Overcoat",
-      price: 1199,
-      discount: "₹2,050 OFF",
-      image:
-        "https://i.postimg.cc/2jXv5hwg/24beaece-7302-4876-adbd-5ff4e98ecc78.jpg",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      title: "Women Solid Notched Lapel Overcoat",
-      price: 1549,
-      discount: "₹2,650 OFF",
-      image:
-        "https://i.postimg.cc/2jXv5hwg/24beaece-7302-4876-adbd-5ff4e98ecc78.jpg",
-      quantity: 1,
-    },
-  ]);
+  console.log(token)
 
-  const incrementQuantity = (id) => {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
-      )
-    );
-  };
+  const fetchClientSecret = useCallback(async () => {
+    const { data } = await axios.post("/api/payment/create-checkout-session", {
+      items: cart,
+    });
+    return data.clientSecret;
+  }, [cart]);
 
-  const decrementQuantity = (id) => {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === id && item.quantity > 1
-          ? { ...item, quantity: item.quantity - 1 }
-          : item
-      )
-    );
-  };
-
-  const removeItem = (id) => {
-    setCartItems(cartItems.filter((item) => item.id !== id));
-  };
-
-  const total = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
-
-  const navigate = useNavigate();
-  const goToCheckout = () => {
-    navigate("/checkout");
-  };
+  const options = { fetchClientSecret };
 
   return (
-    <Container>
-      <Header>Shopping Cart</Header>
-      <Content>
-        <CartItemsWrapper>
-          {cartItems.length === 0 ? (
-            <EmptyCart>Your cart is empty</EmptyCart>
-          ) : (
-            cartItems.map((item) => (
-              <CartItem key={item.id}>
-                <ItemImage src={item.image}/>
-                <ItemDetails>
-                  <ItemName>{item.title}</ItemName>
-                  <ItemPrice>₹{item.price}</ItemPrice>
-                  <p>{item.discount}</p>
-                </ItemDetails>
-                <QuantityControls>
-                  <Button onClick={() => decrementQuantity(item.id)}>-</Button>
-                  <Quantity>{item.quantity}</Quantity>
-                  <Button onClick={() => incrementQuantity(item.id)}>+</Button>
-                </QuantityControls>
-                <RemoveButton onClick={() => removeItem(item.id)}>
-                  Remove
-                </RemoveButton>
-              </CartItem>
-            ))
-          )}
-        </CartItemsWrapper>
-        <Summary>
-          <TotalAmount>Total amount: ₹{total}</TotalAmount>
-          <CheckoutButton onClick={goToCheckout}>Place Order</CheckoutButton>
-        </Summary>
-      </Content>
-    </Container>
+    <>
+      <Header />
+      <Wrapper>
+        <CartTitle>Your Cart</CartTitle>
+        {cart.length === 0 ? (
+          <p>Your cart is empty</p>
+        ) : (
+          <>
+            <CartContainer>
+              <CartItems>
+                {cart.map((item) => (
+                  <CartItem key={item.id}>
+                    <ItemImage src={item.img} alt={item.title} />
+                    <ItemInfo>
+                      <ItemTitle>{item.title}</ItemTitle>
+                      <ItemPrice>₹{item.price}</ItemPrice>
+                      <ItemSize>Size: {item.size}</ItemSize>
+                      <RemoveButton onClick={() => removeFromCart(item.id)}>
+                        Remove
+                      </RemoveButton>
+                    </ItemInfo>
+                  </CartItem>
+                ))}
+              </CartItems>
+              <CartSummary>
+                <h2>Cart Summary</h2>
+                <p>Total Items: {cart.length}</p>
+                <p>Total Price: ₹{calculateCartTotal()}</p>
+                <p>Shipping: Free</p>
+                <p>Tax: 0</p>
+                <p>Total: ₹{calculateCartTotal()}</p>
+                <StripeCheckout
+                shippingAddress
+                billingAddress
+                stripeKey={STRIPE_SECRET_KEY}
+                currency="INR"
+                description={`Your total is $${calculateCartTotal()}`}
+                amount={calculateCartTotal()} 
+                token={onToken}
+                >
+                <CheckoutButton>Checkout</CheckoutButton>
+                </StripeCheckout>
+              </CartSummary>
+            </CartContainer>
+          </>
+        )}
+      </Wrapper>
+    </>
   );
 };
 
-export default CartPage;
+export default Cart;

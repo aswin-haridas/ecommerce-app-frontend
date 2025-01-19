@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
 
 const Container = styled.div`
   display: flex;
@@ -85,36 +84,46 @@ const Message = styled.p`
   }
 `;
 
-const LoginPage = () => {
-  const baseUrl = "http://localhost:3000";
+const RegisterPage = () => {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const {login} = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${baseUrl}/api/auth/login`, {
+      const res = await axios.post('http://localhost:3000/api/auth/register', {
+        username: username,
         email: email,
         password: password,
       });
-      login(res.data.user);
-      if(res.data.Status === "success") {
-        setMessage("Login successful!");
-        navigate("/");
-      } else {
-        setMessage("Invalid credentials. Please try again.");
-      }
+      console.log(res.data.user);
+      
+      setMessage("Registration successful!");
+      setUsername("");
+      setEmail("");
+      setPassword("");
+      setTimeout(() => {
+        navigate('/login');
+      }, 2000);
     } catch (error) {
-      setMessage("Error occurred. Please try again.");
+      setMessage(error.response?.data?.message || "Registration failed!");
     }
   };
+
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
-        <Title>Login to Vestri</Title>
+        <Title>Register to Vestri</Title>
+        <Input
+          type="text"
+          placeholder="Enter your username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
         <Input
           type="email"
           placeholder="Enter your email"
@@ -129,16 +138,16 @@ const LoginPage = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <Button type="submit">Login</Button>
+        <Button type="submit">Register</Button>
         {message && (
-          <Message isError={message !== "success"}>{message}</Message>
+          <Message isError={!message.includes("successful")}>{message}</Message>
         )}
         <p style={{ textAlign: "center" }}>
-          Don't have account ?? <Link to="/register">click here</Link>
+          Already have an account ?? <Link to="/login">click here</Link>
         </p>
       </Form>
     </Container>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
